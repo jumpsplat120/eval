@@ -1,11 +1,25 @@
 {
-  "name": "eval",
-  "title": "Eval",
-  "description": "Run arbitrary code from client to client, using socket.",
-  "authors": [ { "name": "jumpsplat120" } ],
-  "scripts": [ "scripts/eval.js" ],
-  "version": "0.0.1",
-  "minimumCoreVersion": "0.8.8",
-  "compatibleCoreVersion": "0.8.9",
-  "socket": true
+	"name": "eval",
+	"title": "Eval",
+	"description": "Run arbitrary code from client to client, using socket.",
+	"authors": [ {
+		"name": "jumpsplat120",
+		"url": "https://github.com/jumpsplat120"
+		}
+	],
+	"scripts": [ "scripts/eval.js" ],
+	"dependencies": [ { "name": "socketlib" } ],
+	"socket": true,
+	"version": "1.1.0",
+	"minimumCoreVersion": "0.8.8",
+	"compatibleCoreVersion": "9",
+	"url": "https://github.com/jumpsplat120/eval",
+    "manifest": "https://raw.githubusercontent.com/jumpsplat120/eval/latest/module.json",
+    "download": "https://github.com/jumpsplat120/eval/archive/refs/tags/latest.zip",
+    "readme": "https://github.com//jumpsplat120/eval#readme",
+    "media": [ {
+            "type": "icon",
+            "url": "https://raw.githubusercontent.com/jumpsplat120/eval/main/logo.png"
+        }
+    ]
 }
