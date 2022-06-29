@@ -1,0 +1,11 @@
+{
+  "name": "eval",
+  "title": "Eval",
+  "description": "Run arbitrary code from client to client, using socket.",
+  "authors": [ { "name": "jumpsplat120" } ],
+  "scripts": [ "scripts/eval.js" ],
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.9",
+  "socket": true
+}
