@@ -45,10 +45,10 @@ class EvalModule {
         fstr = fstr.substring(fstr.indexOf("(") + 1);
         
         //everything before first ), split into args by commas and any amount of spaces
-        result.params = fstr.substring(0, fstr.indexOf(")") - 1).split(/, */);
+        result.params = fstr.substring(0, fstr.indexOf(")")).split(/, */);
 
         //everything after first { and before last }
-        result.body = fstr.substring(fstr.indexOf("{") + 1, fstr.lastIndexOf("}") - 1);
+        result.body = fstr.substring(fstr.indexOf("{") + 1, fstr.lastIndexOf("}"));
 
         return result;
     }
