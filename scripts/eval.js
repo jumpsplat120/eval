@@ -4,7 +4,7 @@ console.log("Eval | Boy it's dangerous!™");
 //but we don't want the module to be public because wrapping the execute functions is important.
 //stuff is json stringified when passed between clients, so we need to preparse it into a string,
 //and the run function needs to handle unparsing it correctly.
-Class EvalModule {
+class EvalModule {
     static #singleton = false;
 
     #module;
