@@ -39,11 +39,10 @@ class EvalModule {
     //along with the labeled arguments.
     #parse(callback) {
         const result = { };
-        let fstr = callback.toString();
 
         //everything after first (
-        fstr = fstr.substring(fstr.indexOf("(") + 1);
-        
+        let fstr = callback.toString().substring(fstr.indexOf("(") + 1);
+
         //everything before first ), split into args by commas and any amount of spaces
         result.params = fstr.substring(0, fstr.indexOf(")")).split(/, */);
 
